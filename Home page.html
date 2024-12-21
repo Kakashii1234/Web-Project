@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+
+    <title>Mickey Store</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #3498db, #8e44ad);
+            /* تدرج لوني من الأزرق الفاتح إلى البنفسجي */
+        }
+
+        /* الهيدر */
+        .header {
+            height: 50px;
+            background-color: #3498db;
+            text-align: center;
+            color: #ecf0f1;
+            line-height: 50px;
+        }
+
+        /* قسم بين الصورة والنص */
+        .between {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .between img {
+            width: 100px;
+            height: 100px;
+        }
+
+        div.between-button {
+            margin-top: 10px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .between-button input {
+            padding: 10px;
+            border-radius: 15px;
+            border-color: #3498db;
+            width: 200px;
+            margin-right: 10px;
+        }
+
+        .between-button button {
+            padding: 10px 15px;
+            background-color: #3498db;
+            border: none;
+            border-radius: 15px;
+            color: #ecf0f1;
+        }
+
+        .between-button button:hover {
+            background-color: #2980b9;
+            cursor: pointer;
+        }
+
+        /* الروابط في الأسفل */
+        .end {
+            background-color: #3498db;
+            text-align: center;
+            padding: 10px;
+            border-radius: 0% 0% 20% 20%;
+        }
+
+        .end a {
+            color: #ecf0f1;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 15px;
+        }
+
+        .end a:hover {
+            color: #3498db;
+            background-color: #2c3e50;
+        }
+
+        /* الجداول */
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table td {
+            padding: 50px;
+            text-align: center;
+        }
+
+        table img {
+            width: 70%;
+            height: auto;
+            max-width: 350px;
+            margin: 0 auto;
+            border-radius: 25px;
+        }
+
+        /* تنسيق الصور بجانب بعض */
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .image-container div {
+            flex-basis: 30%; /* لضمان أن الصور تأخذ مساحة متساوية */
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        div.image-container a {
+            color: #000000;
+            padding: 2px 10px;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+
+        div.image-container a:hover {
+            color: #3498db;
+            background-color: #2c3e50;
+        }
+
+        div.container {
+            padding: 25px 30px;
+            background-color: #3498db;
+            padding: 50px;
+            border-radius: 50px;
+        }
+
+        div.container-link {
+            text-align: center;
+            padding: 5px 10px;
+          background-color: #b4c9de;
+          border-radius: 25px;
+            color: #2c3e50;
+        }
+        div.container-link-image{
+            text-align: center;
+            padding: 5px 10px;
+          background-color: #b4c9de;
+          border-radius: 25px;
+
+        }
+
+        .footerContainer {
+            background-color: #3498db;
+            height: 150px;
+            border-radius: 100px 100px 0 0;
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 25px;
+        }
+
+        .footer {
+            max-width: 1300px;
+            margin: auto;
+            text-align: center;
+            color: #ecf0f1;
+            font-weight: 500;
+            font-size: larger;
+        }
+
+        .color {
+            background-color: #e8f0f0;
+        }
+
+        /* Display Date Style */
+        .date {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #3498db;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="color">
+        <!-- الهيدر -->
+        <div class="header">
+            <h2 style="color: #ecf0f1;">Mickey Store</h2>
+        </div>
+
+        
+        <div class="between">
+            <img src="images/images.jpg" alt="Store Logo">
+            <h2 style="color: #3498db;">It's not just clothes, it's a store you can rely on.</h2>
+            <br>
+            <div class="between-button">
+                <input type="text" placeholder="Search For Product" />
+                <button>Search</button>
+            </div>
+        </div>
+
+      
+        <div class="date" id="currentDate"></div> 
+
+    
+        <div class="end">
+            <a href="Men clothes.html" target="_blank">Men</a>
+            <a href="Women clothes.html" target="_blank">Women</a>
+            <a href="Kids clothes.html" target="_blank">Kids</a>
+        </div>
+
+    
+        <table>
+            <tr>
+                <td>
+                    <img src="images/images (47).jpg" alt="Image 1">
+                </td>
+                <td>
+                    <img src="images/images (46).jpg" alt="Sale Banner">
+                </td>
+            </tr>
+        </table>
+
+       
+        <div class="container">
+            <div class="image-container">
+                <div>
+                    <div class="container-link">
+                        <a href="Men clothes.html" target="_blank">  <img src="images/images (48).jpg" alt="Style Tip 1"></a>
+                        <p>" Shop unique men's clothes at amazing prices. See<a href="Men clothes.html" target="_blank">Here</a>"</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="container-link">
+                        <a href="Women clothes.html" target="_blank">  <img src="images/images (45).jpg" alt="Style Tip 2"></a>
+                        <p>" Shop unique women's clothes at amazing prices. See<a href="Women clothes.html" target="_blank">Here</a>"</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="container-link">
+                        <a href="Kids clothes.html" target="_blank">
+                            <img src="images/images (49).jpg" alt="Designer Clothing"></a>
+                        <p> "Shop cool kids' clothes at amazing prices. See<a href="Kids clothes.html" target="_blank">Here </a> "</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- الفوتر -->
+        <div class="footerContainer">
+            <div class="footer">
+                Copyright &copy; 2024 Mickey Store. All rights reserved.
+            </div>
+        </div>
+    </div>
+<div>
+    
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
